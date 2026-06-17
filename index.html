@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,63 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Escápula u Omóplato</title>
-/* RESPONSIVE PARA CELULARES */
 
-@media (max-width:768px){
-
-    .header-top{
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
-        padding:20px;
-    }
-
-    .logo-area{
-        flex-direction:column;
-    }
-
-    .autor{
-        text-align:center;
-    }
-
-    header h1{
-        font-size:2rem;
-    }
-
-    header p{
-        font-size:1rem;
-    }
-
-    .container{
-        width:95%;
-    }
-
-    .card{
-        padding:15px;
-    }
-
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .galeria{
-        grid-template-columns:1fr;
-    }
-
-    .imagen img{
-        width:100%;
-        height:auto;
-    }
-
-    .logo-area img{
-        width:60px;
-    }
-
-    h2{
-        font-size:1.3rem;
-    }
-
-}
 <style>
 
 *{
@@ -95,12 +40,20 @@ body{
 }
 
 .logo-area img{
-    width:70px;
+    width:80px;
+    height:auto;
+}
+
+.logo-area h3{
+    font-size:22px;
 }
 
 .autor{
     font-weight:bold;
+    font-size:18px;
 }
+
+/* PORTADA */
 
 header{
     background:linear-gradient(90deg,#4fc3f7,#0288d1);
@@ -116,6 +69,8 @@ header h1{
 header p{
     font-size:1.2rem;
 }
+
+/* CONTENIDO */
 
 .container{
     width:90%;
@@ -173,8 +128,9 @@ li{
 
 .imagen img{
     width:100%;
-    height:300px;
-    object-fit:cover;
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
 .imagen h3{
@@ -188,6 +144,76 @@ footer{
     text-align:center;
     padding:20px;
     margin-top:30px;
+}
+
+/* ==========================
+   RESPONSIVE CELULAR
+   ========================== */
+
+@media screen and (max-width:768px){
+
+    .header-top{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+        padding:15px;
+    }
+
+    .logo-area{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .logo-area img{
+        width:60px;
+    }
+
+    .logo-area h3{
+        font-size:18px;
+    }
+
+    .autor{
+        text-align:center;
+        font-size:16px;
+    }
+
+    header{
+        padding:30px 15px;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    .container{
+        width:95%;
+        padding:20px 0;
+    }
+
+    .card{
+        padding:15px;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+
+    ul{
+        padding-left:18px;
+    }
 }
 
 </style>
@@ -209,11 +235,8 @@ footer{
 </div>
 
 <header>
-
     <h1>Escápula u Omóplato</h1>
-
     <p>Huesos de los Miembros Superiores</p>
-
 </header>
 
 <div class="container">
@@ -224,8 +247,7 @@ footer{
 
         <p>
             La escápula es un hueso plano, triangular y par que forma parte de la cintura escapular.
-            Se localiza en la región posterior del tórax y sirve como punto de inserción para numerosos músculos
-            que participan en los movimientos del hombro y del brazo.
+            Se localiza en la región posterior del tórax y sirve como punto de inserción para numerosos músculos que participan en los movimientos del hombro y del brazo.
         </p>
 
         <div class="highlight">
@@ -311,3 +333,4 @@ Anatomía Humana • Escápula u Omóplato • Tecnológico Boliviano Alemán
 </body>
 </html>
 ```
+
